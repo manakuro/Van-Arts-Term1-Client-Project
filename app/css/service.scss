@@ -1,0 +1,106 @@
+.hero-area.service {
+    min-height: 100vh;
+    /*min-height: 700px;*/
+    /*background-color: #eb893a;*/
+    background-color: #f2959c;
+}
+
+.hero-area.service .hero-desc {
+    font-size: 2.5em;
+    line-height: 1.8;
+    color: #fff;
+    text-align: center;
+}
+
+/* Triangle */
+.service-triangle {
+    position: absolute;
+    bottom: -10%;
+    left: 47.1%;
+    width: 0;
+    height: 0;
+    /*border-top: 50px solid #eb893a;*/
+    border-top: 50px solid #f2959c;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hero-area.service .icon {
+    color: #fff;
+    display: block;
+    margin-top: 350px;
+}
+
+/* Services */
+.page-services {
+    padding-top: 50px;
+}
+
+.page-services .bb:after {
+    border-bottom: 1px solid #666666;
+}
+
+.page-services-list {
+    min-height: 400px;
+    padding: 100px 0;
+}
+
+.page-services-list:nth-child(2) {
+    padding: 50px 0;
+}
+
+.page-services-list:nth-child(odd) {
+    background-color: #e5e5e1;
+}
+
+.service-desc {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #666666;
+
+}
+
+.page-services .img-wrapper {
+    text-align: center;
+}
+
+.page-services .img-wrapper img {
+    width: 200px;
+}
+
+.page-services .img-wrapper .img-title {
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.page-services .img-wrapper .web {
+    color: #7accc8;
+}
+.page-services .img-wrapper .ecommerce {
+    color: #6fdc64;
+}
+.page-services .img-wrapper .seo {
+    color: #cdd41b;
+}
+.page-services .img-wrapper .social {
+    color: #ED5F73;
+}
+
+/* One call */
+.page-service-onecall {
+    min-height: 299px;
+    background-color: #eb893a;
+}
+
+.page-service-onecall .onecall-cap {
+    margin: 0 auto;
+    font-size: 3.5em;
+    color: #fff;
+}
+.page-service-onecall .radius {
+    width: 200px;
+    margin-top: 50px;
+    font-size: 2em;
+}

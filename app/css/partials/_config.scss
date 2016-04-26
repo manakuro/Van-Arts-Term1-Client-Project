@@ -1,0 +1,63 @@
+/*---------------------------
+    Color Theme
+---------------------------*/
+// base
+$white: #fff;
+$black: #2F2F2F;
+$light-black: rgb(191, 189, 189);
+$green: #A3EB97;
+$light-green: #68C4AF;
+$light-grey: #EFEDED;
+$pink: rgba(255,192,203, 1);
+
+// background
+$hero-bg: rgba(47, 42, 42, .94);
+$hero-wrapper: rgba(255,192,203, .85);
+$loader: rgba(255,192,203, 1);
+// $about-bg: rgb(2, 201, 201);
+$about-bg: #4fc3f7;
+$works-bg: #F6CC4C;
+
+
+/*---------------------------
+    Fonts
+---------------------------*/
+$main-font: 'Lato', sans-serif;
+$heading-font: 'Pacifico';
+
+/*---------------------------
+    MEDIA QUERY
+---------------------------*/
+@import 'partials/_mediaquery.scss';
+
+
+/*---------------------------
+    Grid System
+---------------------------*/
+@import 'partials/_grid.scss';
+
+
+/*---------------------------
+    Utilities
+---------------------------*/
+@mixin prevent-resize($selectors:()) {
+    $len: length($selectors);
+    $transition: "";
+
+    @for $i from 1 through $len {
+        @if $i == 1 {
+            $transition: #{nth($selectors, $i)} 100000000s ease
+        } @else {
+            $transition: $transition, #{nth($selectors, $i)} 100000000s ease
+        }
+    }
+    // @debug $transition;
+
+    @include respond-to(s-m) {
+        transition: $transition;
+    }
+
+    @include respond-to(m-l) {
+        transition: $transition;
+    }
+}
