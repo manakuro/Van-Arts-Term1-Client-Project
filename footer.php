@@ -2,9 +2,9 @@
                             
             <div class="row row-center">
                 
-                <div class="span-8 columns">
+                <div class="span-12 span-l-8 columns page-footer-list bb">
 
-                    <ul class="bb">
+                    <ul class="">
                         <li>
                             <a href="./index.html" class="link">Home</a>
                         </li>
@@ -24,9 +24,9 @@
 
                 </div>
 
-                <div class="span-8 columns">
+                <div class="span-12 span-l-8 columns page-footer-list bb">
 
-                    <ul class="bb">
+                    <ul class="">
                         <li>
                             <a href="#" class="link">
                                 <i class="social-icon icon-twitter-bird"></i>
@@ -51,7 +51,7 @@
 
                 </div>
 
-                <div class="span-8 columns">
+                <div class="span-12 span-l-8 columns page-footer-list">
 
                     <p class="copyright">ThinkW © 2015 | Privacy Policy</p>
 

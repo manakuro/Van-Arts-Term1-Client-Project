@@ -4,7 +4,7 @@
 
             <div class="row row-center">
 
-                <div class="span-9 columns">
+                <div class="span-12 span-l-9 columns">
 
                         <p class="hero-title">
                             <span>We</span>
@@ -35,7 +35,7 @@
                 <div class="row">
                     
                 <?php foreach($config['home']['work_lists'] as $val): ?>
-                    <div class="span-4 columns portfolio-list scroll-list" <?php echo $val['data']?> >
+                    <div class="span-6 columns portfolio-list scroll-list" <?php echo $val['data']?> >
                         
                         <div>
                             <img src="<?php echo $val['img']?>" alt="<?php echo $val['alt']?>">
@@ -63,7 +63,7 @@
 
                 <?php foreach($config['home']['service_lists'] as $val): ?>
                     
-                    <div class="span-3 columns service-list scroll-list" <?php echo $val['data']?> >
+                    <div class="span-6 columns service-list scroll-list" <?php echo $val['data']?> >
                             
                         <img src="<?php echo $val['img']?>" alt="<?php echo $val['alt']?>">
 
@@ -85,7 +85,7 @@
 
                 <div class="row row-center scroll-list" data-animation="fade-in-down">
 
-                    <div class="span-8 columns">
+                    <div class="span-12 columns">
                         <p class="client-comment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu est nec ligula ultrices ultrices. Proin lorem tellus, consectetur et sagittis eu, condimentum.”</p>
 
                         <img class="client-logo" src="dist/img/client-logo.png" alt="Client logo image">

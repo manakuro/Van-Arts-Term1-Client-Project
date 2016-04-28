@@ -33,7 +33,7 @@ require "boostrap.php";
 
             <div class="row">
 
-                <div class="span-3 columns">
+                <div class="span-4 columns">
 
                     <a href="./index.php" class="logo">
                         <img src="dist/img/logo.png" alt="logo">
@@ -41,7 +41,7 @@ require "boostrap.php";
 
                 </div>
 
-                <div class="span-3 columns offset-6 medium-hide large-hide">
+                <div class="span-3 columns offset-5 medium-hide large-hide">
 
                     <div class="page-header-menu">
                         <i class="fa fa-bars page-header-menu-icon js-menu-icon"></i>    

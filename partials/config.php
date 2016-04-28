@@ -51,7 +51,7 @@ $config = array(
 
         'service_lists' => array(
             array(
-                'img' => $imgPath.'web-development.png',
+                'img' => $imgPath.'home/web_development.png',
                 'alt' => 'Service image',
                 'data' => 'data-animation="fade-in"',
                 'title' => 'Web Development & Web Design',
@@ -59,7 +59,7 @@ $config = array(
             ),
 
             array(
-                'img' => $imgPath.'ecommerce.png',
+                'img' => $imgPath.'home/ecommerce.png',
                 'alt' => 'Service image',
                 'data' => 'data-animation="fade-in" data-animation_delay="0.3s"',
                 'title' => 'eCommerce',
@@ -67,7 +67,7 @@ $config = array(
             ),
 
             array(
-                'img' => $imgPath.'seo.png',
+                'img' => $imgPath.'home/seo.png',
                 'alt' => 'Service image',
                 'data' => 'data-animation="fade-in" data-animation_delay="0.6s"',
                 'title' => 'SEO',
@@ -75,7 +75,7 @@ $config = array(
             ),
 
             array(
-                'img' => $imgPath.'social.png',
+                'img' => $imgPath.'home/social.png',
                 'alt' => 'Service image',
                 'data' => 'data-animation="fade-in" data-animation_delay="0.9s"',
                 'title' => 'Social Networks',
