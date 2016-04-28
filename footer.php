@@ -2,7 +2,7 @@
                             
             <div class="row row-center">
                 
-                <div class="span-12 span-l-8 columns page-footer-list bb">
+                <div class="span-12 span-m-8 columns page-footer-list bb">
 
                     <ul class="">
                         <li>
@@ -24,7 +24,7 @@
 
                 </div>
 
-                <div class="span-12 span-l-8 columns page-footer-list bb">
+                <div class="span-12 span-m-8 columns page-footer-list bb">
 
                     <ul class="">
                         <li>
@@ -51,7 +51,7 @@
 
                 </div>
 
-                <div class="span-12 span-l-8 columns page-footer-list">
+                <div class="span-12 span-m-8 columns page-footer-list">
 
                     <p class="copyright">ThinkW © 2015 | Privacy Policy</p>
 

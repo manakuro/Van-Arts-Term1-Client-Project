@@ -23,7 +23,7 @@ require "boostrap.php";
 
             <div class="row">
 
-                <div class="span-4 columns">
+                <div class="span-4 span-m-3 span-l-2 columns">
 
                     <a href="./index.php" class="logo">
                         <img src="dist/img/logo.png" alt="logo">
@@ -39,24 +39,24 @@ require "boostrap.php";
                     
                 </div>
 
-                <nav class="page-nav span-m-7 columns offset-m-2">
+                <nav class="page-nav span-m-9 columns span-l-8 offset-l-1">
 
-                    <i class="fa fa-times close-btn js-menu-icon"></i>
+                    <i class="fa fa-times close-btn js-menu-icon medium-hide large-hide"></i>
 
-                    <ul>
-                        <li>
+                    <ul class="menu-list">
+                        <li class="menu-item">
                             <a href="./index.php" class="link">Home</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="./about.php" class="link">About</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="./service.php" class="link">Service</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="./portfolio.php" class="link">Work</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="./contact.php" class="link">Contact</a>
                         </li>
                     </ul>

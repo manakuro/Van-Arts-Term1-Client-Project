@@ -64,9 +64,9 @@ html {
     line-height: 1.5;
 
     // Tablet
-    // @include respond-to(m) {
-    //     font-size: 120%;
-    // }
+    @include respond-to(m) {
+        font-size: 120%;
+    }
 
     // Desktop
     // @include respond-to(l) {

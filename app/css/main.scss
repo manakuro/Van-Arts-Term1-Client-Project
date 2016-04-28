@@ -10,6 +10,50 @@
         LAYOUT
 ----------------------------*/
 // Modules will scale with document
+.page-header {
+    font-size: 1rem;
+
+    // Tablet
+    @include respond-to(m) {
+        font-size: .5rem;
+    }
+
+}
+
+.hero-area.home {
+    font-size: 1rem;
+
+    // Desktop
+    @include respond-to(m) {
+        font-size: 1.2rem;
+    }
+
+}
+
+.page-portfolio {
+    font-size: 1rem;
+
+    // Tablet
+    @include respond-to(m) {
+        font-size: 1.4rem;
+    }
+
+    // Desktop
+    @include respond-to(l) {
+        font-size: .9rem;
+    }
+
+}
+
+.page-service {
+    font-style: 1rem;
+
+    // Desktop
+    @include respond-to(l) {
+        font-size: .9rem;
+    }
+
+}
 
 /* --------------------------
         HEADER
@@ -18,7 +62,7 @@
     position: fixed;
     z-index: 10000;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1.5em 0;
     background: rgba(181,203,197, .8);
 
     transition: background-color .5s;
@@ -37,15 +81,17 @@
         position: fixed;
         opacity: 0;
         visibility: hidden;
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-        top: 0;
         z-index: 9999999;
-        left: 0;
         background: rgba($black, .95);
-
         transition: opacity .5s;
+
+        // Tablet
+        @include respond-to(m) {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            background: none;
+        }
 
         .close-btn {
             position: absolute;
@@ -61,26 +107,22 @@
             transition: all .5;
         }
 
-    }
+        // menu list
+        .menu-list {
+            padding: 3rem;
+            -js-display: flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
 
-    // Only mobile
-    &.show {
-
-        .page-header-menu {
-            opacity: 0;
-        }
-
-        .page-nav {
-            opacity: 1;
-            visibility: visible;
-
-            ul {
-                padding: 3rem;
-                text-align: center;
+            // Tablet
+            @include respond-to(m) {
+                padding: 0;
+                flex-direction: row;
             }
 
-            li {
-                display: block;
+            .menu-item {
                 padding: 1rem;
             }
 
@@ -95,6 +137,26 @@
                     color: #e1a852;
                 }
             }
+
+        }
+
+    }
+
+    // Only mobile
+    &.show {
+
+        .page-header-menu {
+            opacity: 0;
+        }
+
+        .page-nav {
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            top: 0;
+            left: 0;
 
             .close-btn {
                 opacity: .9;
@@ -129,7 +191,7 @@
 
 
 .darker {
-    background: rgba(135,146,143, 0.8);
+    background: rgba(135,146,143, .8);
 }
 
 .darker .page-nav a {
@@ -143,7 +205,6 @@
 .hero-area {
     position: relative;
     padding: 50px 0;
-
 
     &.home {
         min-height: 100vh;
@@ -168,7 +229,8 @@
     }
 
     .one-call-wrapper .radius {
-        width: 9em;
+        width: 8em;
+        font-size: 1.5em;
     }
 
 }
@@ -187,11 +249,13 @@
     position: relative;
     margin: 2rem 0;
     text-align: center;
-    // padding: 0;
 
-    // img {
-    //     width: 90%;
-    // }
+    // Tablet
+    @include respond-to(l) {    
+        img {
+            width: auto;
+        }
+    }
 }
 
 .portfolio-info {
@@ -205,10 +269,23 @@
     background-color: rgba(237,95,115, .6);
     opacity: 0;
     transition: opacity .5s;
+
+    // Tablet
+    @include respond-to(m) {    
+        left: 5%;
+        width: 90%;
+    }
+
+    // Desktop
+    @include respond-to(l) {
+        left: 20.1%;
+        width: 59%;
+    }
+
 }
 
 .portfolio-info-inner {
-    margin-top: 4rem;
+    margin-top: 4em;
 }
 .portfolio-info-inner h5 {
     font-size: 1.5em;
@@ -217,8 +294,8 @@
 }
 
 .portfolio-info-inner .radius {
-    margin-top: .5rem;
-    width: 7rem;
+    margin-top: .5em;
+    width: 7em;
     font-size: 1em;
 }
 
@@ -237,13 +314,24 @@
 
     .service-list {
         position: relative;
-        min-height: 50vh;
+        min-height: 60vw;
         text-align: center;
         margin-top: 2rem;
 
+        // Tablet
+        @include respond-to(l) {
+            margin: 0;
+            min-height: 30vw;
+        }
+
         img {
             max-width: 60%;
-            height: 24vh;
+            max-height: 30vw;
+
+            // Tablet
+            @include respond-to(l) {
+                height: 15vw;
+            }
 
             @include prevent-resize(header);
         }
@@ -259,9 +347,11 @@
             // top: 100%;
             // left: 16%;
             position: absolute;
+            left: 50%;
             bottom: 0;
-            width: 13rem;
+            width: 8em;
             font-size: 1.5em;
+            margin-left: -4em;
             // margin: 2vh auto;
         }
 
@@ -548,7 +638,7 @@
 }
 
 .page-title {
-    font-size: 4.5em;
+    font-size: 4.5rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 2rem;
@@ -561,7 +651,7 @@
 
 .page-title.home {
     font-family: $heading-font;
-    font-size: 4em;
+    font-size: 4rem;
     text-align: center;
     text-transform: none;
     color: $white;
