@@ -57,7 +57,7 @@
 
             <section class="section page-service">
 
-                <h3 class="page-title home">Love</h3>
+                <h3 class="page-title home">Passion</h3>
 
                 <div class="row">
 

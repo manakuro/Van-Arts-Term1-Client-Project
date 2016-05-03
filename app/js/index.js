@@ -80,7 +80,7 @@ $(function(){
                 helpers: {
                     overlay : {
                         css : {
-                            "background" : "rgba(58, 42, 45, 0.8)"
+                            "background" : "rgba(58, 42, 45, .8)"
                         }
                     }
                 }
